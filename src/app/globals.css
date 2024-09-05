@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-layout {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-layout>div {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+.main-content {
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  padding-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.main-content .ant-card {
+  width: fit-content;
+  font-size: 12px;
+  border: 1px solid #E5E6EA;
+}
+
+.main-content .ant-card>.ant-card-body {
+  padding: 0;
+}
+.main-layout .header {
+  margin-bottom: 1rem;
+}
+.main-layout .header .ant-tabs-nav {
+  margin-bottom: 0;
+}
